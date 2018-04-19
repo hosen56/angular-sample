@@ -17,3 +17,5 @@
 ## Atom Packages
 1. atom-terminal
 2. angular 2
+3. todo-show
+4. emmet
