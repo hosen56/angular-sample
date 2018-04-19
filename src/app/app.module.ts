@@ -21,6 +21,7 @@ import {CoursesService} from "./services/cources-mock.service";
 import { CoursesCardListComponent } from './courses-card-list/courses-card-list.component';
 import { CourseDialogComponent } from './course-dialog/course-dialog.component';
 import { CourseComponent } from './course/course.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { CourseComponent } from './course/course.component';
     CoursesCardListComponent,
     CourseDialogComponent,
     CourseComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
