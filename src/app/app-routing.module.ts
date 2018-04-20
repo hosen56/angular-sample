@@ -5,6 +5,7 @@ import {AboutComponent} from "./about/about.component";
 import {CourseComponent} from "./course/course.component";
 import {LoginComponent} from "./login/login.component";
 import {RegisterComponent} from "./register/register.component";
+import { ZaifComponent } from './zaif/zaif.component';
 
 const routes: Routes = [
     {
@@ -27,6 +28,10 @@ const routes: Routes = [
     {
         path: 'login',
         component: LoginComponent,
+    },
+    {
+        path: 'zaif',
+        component: ZaifComponent,
     },
     {
         path: "**",

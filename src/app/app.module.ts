@@ -12,7 +12,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatListModule,MatSidenavModule,MatToolbarModule,
   MatDialogModule,MatSelectModule,MatInputModule,MatTableModule,
-  MatSortModule,MatProgressSpinnerModule,MatPaginatorModule
+  MatSortModule,MatProgressSpinnerModule,MatPaginatorModule,MatChipsModule,
 } from '@angular/material';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { HomeComponent } from './home/home.component';
@@ -22,6 +22,10 @@ import { CoursesCardListComponent } from './courses-card-list/courses-card-list.
 import { CourseDialogComponent } from './course-dialog/course-dialog.component';
 import { CourseComponent } from './course/course.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginDialogComponent } from './login-dialog/login-dialog.component';
+import { RegisterDialogComponent } from './register-dialog/register-dialog.component';
+import { ZaifComponent } from './zaif/zaif.component';
 
 @NgModule({
   declarations: [
@@ -32,12 +36,17 @@ import { LoginComponent } from './login/login.component';
     CourseDialogComponent,
     CourseComponent,
     LoginComponent,
+    RegisterComponent,
+    LoginDialogComponent,
+    RegisterDialogComponent,
+    ZaifComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
+    MatChipsModule,
     MatIconModule,
     MatMenuModule,
     MatButtonModule,
@@ -56,7 +65,9 @@ import { LoginComponent } from './login/login.component';
     ReactiveFormsModule,
   ],
   providers: [CoursesService],
-  entryComponents: [CourseDialogComponent],
+  entryComponents: [CourseDialogComponent,
+                    LoginDialogComponent,
+                    RegisterDialogComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
